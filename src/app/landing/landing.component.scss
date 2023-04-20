@@ -1,0 +1,48 @@
+.landing {
+    display: flex;
+    height: calc(92vh - 6vh); /* 60px is the height of the banner */
+    background-color: #f5f5f5;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .left-half {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .right-half {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 9rem;
+    margin: 0;
+    color: #bd1717;
+  }
+  
+  h2 {
+    font-size: 5.5rem;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    font:bold;
+  }
+
+  .highlight {
+    color: #bd1717;
+    font-weight: bold;
+  }
+  
