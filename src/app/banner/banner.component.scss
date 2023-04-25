@@ -1,26 +1,35 @@
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f5f5f5;
-    padding: 10px;
-    height: 8vh;
-  }
-  
-  .company-name {
-    margin: 0;
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-    font:bolder;
-    color: #bd1717;
-  }
-  
-  .links a {
-    margin-left: 10px;
-    text-decoration: none;
-    font:bold;
-    font-family: 'Oswald', sans-serif;
-    color: #bd1717;
-  }
+  position: fixed;
+  /* Add position fixed */
+  top: 0;
+  /* Set the distance from the top of the viewport */
+  left: 0;
+  /* Set the distance from the left of the viewport */
+  right: 0;
+  /* Set the distance from the right of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bd1717;
+  padding: 10px;
+  height: 12vh;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  
+.links a {
+  margin-left: 10px;
+  text-decoration: none;
+  font: bold;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #f5f5f5;
+}
+
+.links a:hover {
+  background-color: #bd1717;
+}
+
+.logo_sanje {
+  max-height: 12vh;
+}
