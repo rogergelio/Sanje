@@ -83,3 +83,43 @@ button:active {
 .logote{
   height: 25rem;
 }
+.scroll-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  rotate: 45deg;
+}
+
+.scroll-down a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 2px solid #bd1717;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-down a .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid #bd1717;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-down a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-down a:hover .arrow {
+  transform: translate(-50%, -50%);
+}
