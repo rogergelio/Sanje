@@ -31,4 +31,11 @@ export class AboutComponent implements OnInit {
 
     observer.observe(this.elementRef.nativeElement);
   }
+
+  scrollToNextSection() {
+    const nextSection = document.querySelector('#how-click');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

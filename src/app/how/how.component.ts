@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./how.component.scss']
 })
 export class HowComponent {
-
+  scrollToNextSection() {
+    const nextSection = document.querySelector('#contact-us');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
