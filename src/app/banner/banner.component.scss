@@ -27,8 +27,15 @@
 }
 
 .links a:hover {
-  background-color: #bd1717;
+  background-color: #f5f5f5;
+  color: #bd1717;
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  padding: 8px 2px;
+  transition: all 0.3s ease-in-out;
+  font: bolder;
 }
+
 
 .logo_sanje {
   max-height: 12vh;
