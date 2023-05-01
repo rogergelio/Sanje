@@ -8,5 +8,5 @@ inject();
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sanje-analytica-angular';
+  title = 'Sanje Analytica';
 }
