@@ -19,5 +19,9 @@ describe('BannerComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should contain an image', () => {
+    const imgElement = fixture.nativeElement.querySelector('img');
+    expect(imgElement).toBeTruthy();
+  });
   
 });
