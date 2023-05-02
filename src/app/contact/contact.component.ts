@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  user = {name: '', email: '', message: ''}; 
 
+  onSubmit() {
+    console.log(this.user); 
+  }
 }

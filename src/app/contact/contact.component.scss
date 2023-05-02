@@ -81,3 +81,28 @@ textarea {
 .email span {
   font-size: 1.2rem;
 }
+
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sub-button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #bd1717;
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
+}

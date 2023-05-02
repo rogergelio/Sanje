@@ -1,15 +1,20 @@
 <div class="contact-container">
   <div id="contact-us">
     <h2>¡Contáctanos!</h2>
-    <div class="contact-info">
-      <div class="phone">
-        <i class="fas fa-phone"></i>
-        <span>+52 5519004999</span>
+    <form #myForm="ngForm">
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
       </div>
-      <div class="email">
-        <i class="fas fa-envelope"></i>
-        <span>rogeliotorres@sanjeanalytica.com</span>
+      <div>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="user.email" required email>
       </div>
-    </div>
+      <div>
+        <label for="message">Mensaje:</label>
+        <input type="text" id="message" name="message" [(ngModel)]="user.message" required>
+      </div>
+      <button class="sub-button" type="submit" (click)="onSubmit()">Contactar</button>
+    </form>
   </div>
 </div>
