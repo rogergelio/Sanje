@@ -9,6 +9,11 @@ export class ContactComponent {
   user = {name: '', email: '', message: ''}; 
 
   onSubmit() {
-    console.log(this.user); 
-  }
+    if (!this.user.name || !this.user.email || !this.user.message) {
+      alert('¡Llena todos los campos!');
+      return;
+    }else{
+      console.log("Gracias usuario "+this.user.name)
+    }
+}
 }

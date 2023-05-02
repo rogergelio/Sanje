@@ -1,7 +1,7 @@
 <div class="contact-container">
   <div id="contact-us">
     <h2>¡Contáctanos!</h2>
-    <form #myForm="ngForm">
+    <form #myForm="ngForm" (ngSumit)="onSubmit()">
       <div>
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
