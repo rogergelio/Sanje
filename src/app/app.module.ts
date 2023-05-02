@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { HowComponent } from './how/how.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { LoggingService } from 'src/services/LoggingService';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,7 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
